@@ -101,9 +101,14 @@ export default function Cadastro() {
                         <Text style={styles.tituloPrincipal}>Cadastro da loja</Text>
                         <Text style={styles.caminho}>Loja / Cadastro da loja</Text>
                     </View>
-                    <Pressable style={styles.atalho} onPress={() => router.push('/pontos')}>
-                        <Text style={styles.atalhoTexto}>📍 Pontos de coleta</Text>
-                    </Pressable>
+                    <View style={{ gap: 6 }}>
+                        <Pressable style={styles.atalho} onPress={() => router.push('/pontos')}>
+                            <Text style={styles.atalhoTexto}>📍 Pontos de coleta</Text>
+                        </Pressable>
+                        <Pressable style={styles.atalho} onPress={() => router.push('/catalogo')}>
+                            <Text style={styles.atalhoTexto}>🛍️ Catálogo</Text>
+                        </Pressable>
+                    </View>
                 </View>
 
                 <View style={styles.card}>
